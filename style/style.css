@@ -1,8 +1,9 @@
-/* Estilos para la página */
 body {
     background-color: #fff;
     font-family: Arial, sans-serif;
 }
+
+/** Cabecera */
 
 header, footer {
     background-color: #000;
@@ -11,45 +12,115 @@ header, footer {
 }
 
 header{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
     align-items: center;
     justify-content: space-between;
 }
 
-header img {
-    align-self: center;
-    margin: 1rem;
+header > img { 
+    width: 100%;
+    height: 100%;
+    max-width: 120px;
+    max-height: 120px;
+    margin-left:15%;
 }
 
-header div {
+h1{    
+    margin: auto;
+}
+
+header div {  
     background-color: #000;
     color: #fff; 
     display: flex;
     align-items: center; 
+    margin: auto;
 }
-nav {
-    background-color: #333;
-    padding: 2rem;
+header div img:hover{
+    cursor: pointer; 
+}
+header div p{
+    margin : 1rem;
 }
 
-nav a, header a {
+header div div{ 
+    justify-content: center;
+    background-color: red;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+
+}
+header div div:hover{
+    background-color: rgb(211, 62, 62);
+    cursor: pointer;
+}
+
+header a {
     color: #fff;  
     text-decoration: none;  
     margin: 0 1rem;  
 }
 
-div {
-    background-color: #ccc; 
-    padding: 1.5rem; 
-    text-align: center;  
+/** Barra de Navegación */
+
+nav {
+    background-color: #333; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+nav a{
+    color: #fff;  
+    text-decoration: none;  
+    padding: 0.5rem;
+    margin:  1rem;
+    border-radius: 10px
+}
+
+nav a:hover{
+    color: black;
+    background-color: white;
+    padding: 0.5rem;
+    text-decoration: none;  
+    margin:  1rem;
+}
+/** Banner */
+
+.carousel-container{
+    background-color: lightgray;
+}
+.carousel {
+    margin: auto;
+    width: 200%;
+    overflow: hidden;
+    position: relative; 
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide img {
+    max-width: 100%; 
+    max-height: 200px;
+    object-fit: contain; 
+    margin: auto; 
+    display: block;
+}
+
+/** Cuerpo*/
+ 
 
 section {
     padding: 1.5rem; 
 }
 
-footer {
-    position: fixed;  
-    bottom: 0;  
-    width: 100%; 
+
+/** Pie */
+
+footer { 
 }
