@@ -197,5 +197,6 @@ article > div div{
 
 /** Pie */
 
-footer { 
+footer {
+    text-align: center;
 }
