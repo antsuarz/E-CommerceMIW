@@ -94,7 +94,7 @@ nav a:hover{
 }
 .carousel {
     margin: auto;
-    width: 200%;
+    width: 300%;
     overflow: hidden;
     position: relative; 
 }
@@ -113,12 +113,90 @@ nav a:hover{
 }
 
 /** Cuerpo*/
- 
 
 section {
     padding: 1.5rem; 
 }
 
+article {
+    margin: 1rem 10rem 1rem 10rem;
+    padding: 0.5rem;
+    background-color: lightgray;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+article > div{
+    padding: 2rem;
+    display: flex; 
+    flex-wrap: wrap; 
+}
+
+article > div div{
+    max-width: 200px;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; 
+}
+ 
+
+.card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    margin-right: 2rem;
+    margin-bottom: 2rem; 
+    height: auto;
+}
+
+.card:hover img {
+    width: 50%;
+    cursor: pointer;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    transition: width 0.3s ease;
+}
+
+.card-content h4 {
+    margin-top: 0; 
+    margin-bottom: 0.5rem;
+    padding: 0;
+}
+
+.card-content p {
+    margin-top: 0;
+    color: darkred;
+}
+
+.card-content button {
+    display: none; 
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
+    padding: 0.5rem 2rem;
+}
+
+.card:hover .card-content button {
+    display: block;
+    cursor: pointer;
+}
 
 /** Pie */
 
