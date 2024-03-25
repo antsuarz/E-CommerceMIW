@@ -11,7 +11,7 @@ header, footer {
     padding: 1rem;
 }
 
-header{
+header{ 
     display: grid;
     grid-template-columns: 1fr 1.5fr 1fr;
     align-items: center;
@@ -137,10 +137,23 @@ article > div div{
     background-color: white;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
- 
+.card:hover img {
+    width: 70%;
+    cursor: pointer;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card img {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    transition: width 0.3s ease;
+}
 
 .card {
     width: 300px;
@@ -153,22 +166,6 @@ article > div div{
     margin-right: 2rem;
     margin-bottom: 2rem; 
     height: auto;
-}
-
-.card:hover img {
-    width: 50%;
-    cursor: pointer;
-}
-
-.card-content {
-    padding: 20px;
-}
-
-.card img {
-    width: 80%;
-    display: block;
-    margin: 0 auto;
-    transition: width 0.3s ease;
 }
 
 .card-content h4 {
@@ -184,13 +181,13 @@ article > div div{
 
 .card-content button {
     display: none; 
-    background-color: #007bff;
+    background-color: black;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     margin: auto;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 3.5rem;
 }
 
 .card:hover .card-content button {
