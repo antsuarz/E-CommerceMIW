@@ -62,7 +62,7 @@ section:nth-of-type(2) > h3::after{
   }
    
   .panel {
-    padding: 0 18px;
+    padding: 0 1rem;
     background-color: white;
     max-height: 0;
     overflow: hidden;
@@ -92,4 +92,21 @@ section:nth-of-type(2) > h3::after{
     content: "˄";
   }
 
-  /** Paypal*/ 
+  @media screen and (max-width: 500px) {
+      main > section > div{
+        display: flex; 
+        flex-direction: column;
+      }
+
+      .panel {
+        padding: 0;
+      }
+
+      main section div section:nth-child(odd){ 
+        margin-bottom: 1rem;
+      }
+
+      main section div section:nth-child(even){ 
+        margin-left: 0rem;
+      }
+  }
